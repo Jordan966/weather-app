@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #222;
+    color: white;
+}
+
+/* Container Style */
+.container {
+    margin: 15vh auto;
+    width: 33vw;
+    max-width: 50vw;
+    background-color: skyblue;
+    text-align: center;
+    border-radius: 30px;
+    padding: 60px 20px;
+}
+
+/* Search Bar Styles */
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 35%);
+    width: 50%;
+    margin-right: 5%;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    height: 45px;
+    width: 10%;
+    cursor: pointer;
+    background-color: #244755;
+}
+
+.search img {
+    width: 30px;
+    filter: invert(1);
+}
+
+/* Weather Display Styles */
+.weather {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.weather-box {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.weather-icon {
+    width: 45%;
+    filter: invert(1) drop-shadow(10px 3px 6px grey);
+    padding: 20px;
+}
+
+.temperature, .feels-like, .weatherOutside, .city {
+    font-size: 2rem;
+    margin: 0;
+    text-shadow: 2px 2px #00000030;
+}
+
+.feels-like {
+    font-size: 1rem;
+}
+
+.temperature {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+/* Details Section Styles */
+.details {
+    display: flex;
+    border-top: solid 5px #87ceeb1f;
+    margin-top: 5vh;
+    padding-top: 5vh;
+}
+
+.col {
+    font-weight: bold;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    width: 45%;
+}
+
+/* Conditional Styling Classes */
+.dayTime {
+    filter: invert(94%) sepia(78%) saturate(671%) hue-rotate(342deg) brightness(100%) contrast(105%) drop-shadow(2px 4px 6px grey);
+}
+
+.nightTime {
+    background-color: #244755;
+}
+
+/* Icon Styles */
+.humidity-icon, .wind-icon, .sunset-icon {
+    width: 30%;
+    filter: opacity(0.6);
+}
+
+
+
+/* ANIMATION IMAGE - FADE IN */
+@keyframes fadeIn {
+    0% {opacity: 0;
+        transform: translateX(50px);
+       };
+    100% {opacity: 1;
+          
+    };
+}
+
+.fade-in {
+    animation: fadeIn ease 1.5s;
+}
